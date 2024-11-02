@@ -133,15 +133,7 @@ export default function Header() {
               >
                 Iniciar sesion
               </Link>
-              <Link
-                to="/login"
-                className="block px-4 py-2 text-sm hover:bg-gray-500 hover:bg-zinc-900"
-                role="menuitem"
-                tabIndex="-1"
-                id="user-menu-item-1"
-              >
-                Registrarse
-              </Link>
+              
             </div>
           </div>
         </div>
