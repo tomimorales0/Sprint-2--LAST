@@ -11,7 +11,7 @@ function LoginForm() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    /
+    
     const user = users.find(
       (user) => user.email === email && user.password === password
     );

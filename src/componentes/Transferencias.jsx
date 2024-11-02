@@ -9,17 +9,17 @@ const cuentas = [
 ];
 
 export default function Transferencias() {
-  const [exchangeRate, setExchangeRate] = useState(null); // Estado para la tasa de cambio
+  const [exchangeRate, setExchangeRate] = useState(null); 
 
   const handleTransfer = (event) => {
-    event.preventDefault(); // Evitar el comportamiento por defecto del formulario
+    event.preventDefault(); 
 
     // Mostrar alerta de éxito
     Swal.fire({
       icon: 'success',
       title: '¡Transferencia realizada con éxito!',
       showConfirmButton: true,
-      timer: 2000 // Opcional: cerrar la alerta después de 2 segundos
+      timer: 2000 
     });
   };
 
