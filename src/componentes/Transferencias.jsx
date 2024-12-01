@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 import axios from 'axios';
+import Contactos from './Contactos';
 
 const cuentas = [
   { id: 1, nombre: 'Cuenta A', cbu: '0170099220000067797370' },
@@ -9,7 +9,6 @@ const cuentas = [
 ];
 
 export default function Transferencias() {
-  const [exchangeRate, setExchangeRate] = useState(null); 
 
   const handleTransfer = (event) => {
     event.preventDefault(); 
@@ -71,6 +70,7 @@ export default function Transferencias() {
           <h2 className="text-lg font-bold leading-tight tracking-tight text-gray-900 md:text-xl text-white text-center">
             Tus contactos
           </h2>
+          <Contactos/>
         </ul>
         <div className="w-full flex justify-around my-12 flex-wrap gap-5">
           {/* Sección de Transferir */}

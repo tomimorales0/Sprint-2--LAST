@@ -1,3 +1,4 @@
+import Cuenta from "./Cuenta";
 
 export default function Cuentas() {
   return (
@@ -6,7 +7,9 @@ export default function Cuentas() {
       id="main"
     >
       <div className="flex flex-col items-center w-full gap-5">
-        
+      <h2 className="font-bold text-2xl uppercase">Cuentas</h2>
+        <Cuenta />
+
         <h2 className="font-bold text-2xl uppercase">Tarjetas</h2>
         <div className="flex flex-wrap lg:flex-nowrap 2xl:justify-around gap-2 w-full">
           <a
